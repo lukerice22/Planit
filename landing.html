@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planit</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="top"></div>
+    <div class="navbar">
+        <a href="#top" class="logo">Planit</a>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#community">Community</a>
+            
+            <div class="nav-links auth">
+            <a href="/signup.html" class="signupcolor">Get Started</a>
+            <a href="/signin.html" class="signincolor">Sign in</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="hero">
+        <div class="Graphic"><img src="Project-pictures/Planit_Earth.png" alt="Earth" class="earth-img"></div>
+        <div class="information">
+            <h1> 
+                See it. Save it. 
+            </h1>
+        <h2> Planit. </h2>
+            <p> 
+                Your travel bucket list <br>
+                brought to life. 
+            </p>
+            <div class="buttons"> 
+                <a href="/signup.html" class="start-btn">Get Started</a>
+                <a href="/signin.html" class="sign-in-btn">Sign In</a>
+            </div>
+        </div>
+    </div>
+    <section id="about">
+        <div class="about-content">
+            <img src="Project-pictures/About-Section.png" alt="Travel graphic" class="about-img">
+            <div class="text">
+                <h2>Your World, Mapped</h2>
+                <p>
+                    Have you ever found a place you want to visit, whether it's from social media,
+                    a movie, or a random blog post, just to forget it within hours? With Planit
+                    you can pin it, track it, and make it happen.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="features">
+        <div class="features-content">
+            <img src="Project-pictures/features-img.png" alt="feature graphic" class="features-img">
+            <div class="features-text">
+                <h2>Features</h2>
+                <ul>
+                    <li>📍 SAVE DESTINATIONS -  Drop pins anywhere — dream spots, real spots, even random screenshots.</li>
+                    <li>🧠 AI PHOTO DETECTION - Upload a photo, get the location instantly.</li>
+                    <li>🏆 ACHIEVEMENTS & STATS - Track your goals, unlock badges, and see your journey.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="community">
+  <h2>Discover Through Community</h2>
+  <div class="community-grid">
+    <div class="community-card">
+      <h3>Add Friends 🤝</h3>
+      <p>Connect with travelers you know or meet new adventurers from around the world.</p>
+    </div>
+    <div class="community-card">
+      <h3>Travel Together ✈️</h3>
+      <p>Plan trips, share pins, and build group journeys on your shared map.</p>
+    </div>
+    <div class="community-card">
+      <h3>Share Photos 📸</h3>
+      <p>Upload and tag your travel memories to create living trip stories.</p>
+    </div>
+    <div class="community-card">
+      <h3>Follow Inspiration ✨</h3>
+      <p>Explore the pins and paths of your favorite creators and friends.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+</section>
+    <section id="cta" class="fade-in">
+  <h2>Start Your Journey</h2>
+  <p>Don't let your travel dreams fade. Save them, plan them, and make them real with Planit.</p>
+  <a href="/signup.html"><button class="start-btn">Get Started</button></a>
+</section>
+
+<section id="footer">
+  <div class="footer-container">
+    <div class="footer-column brand">
+      <h3><span class="pin-icon">📍</span> <strong>Planit</strong></h3>
+      <p>Your world, mapped. Every journey tells a story.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Mobile App</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Community</h4>
+      <ul>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Travel Stories</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Planit. All rights reserved.</p>
+  </div>
+</section>
+
+
+
+    <script>
+  const elementsToFade = document.querySelectorAll(
+    'section, h2, p, ul, li, img, .about-content, .features-content, .about-text, .features-text'
+  );
+
+  elementsToFade.forEach(el => el.classList.add('fade-in'));
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  elementsToFade.forEach(el => appearOnScroll.observe(el));
+</script>
+
+
+</body>
+</html>

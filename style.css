@@ -1,0 +1,793 @@
+/* ==== LANDING PAGE ==== */
+ body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 98.805%;
+  max-width: 100%;
+  box-sizing: border-box; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;           
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 10px;
+  color: white;
+    background: linear-gradient(
+    to bottom,
+    #051d47   0%,    /* full header color at top */
+    #051d47 30%,  /* slightly transparent a bit down */
+    #051d47ea 100%   /* fully transparent at bottom */
+  );
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.192);
+}
+
+.hero,
+#about,
+#features,
+#cta {
+  margin-top: 200px; 
+}
+
+.nav-links {
+  margin-left: auto;   
+  margin-right: 40px;    
+  display: flex;
+  gap: 10px;             
+}
+
+.nav-links a {
+    position: relative;
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: 'Be vietnam Pro';
+    font-weight: lighter;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    top: 6px
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 3px;
+  width: 0%;
+  background-color: #ffffff;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.auth {
+  display: flex;
+  gap: 30px;
+  backdrop-filter: blur(4px);
+}
+
+.auth a {
+  left: 65px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: -20px;
+  top: 4px;
+}
+
+.signupcolor {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.signupcolor:hover {
+  color: #deb324;
+  font-weight: bold;
+}
+
+.signincolor {
+  color: #5fc9fe;
+}
+
+.signincolor:hover {
+  color: #64c6ff;
+}
+
+.logo {
+    color: white;
+    font-family: 'Pacifico';
+    font-weight: 500;
+    font-size: 55px;
+    padding-left: 40px;
+    text-decoration: none;
+}
+
+.earth-img {
+    align-items: center;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+  
+.Graphic {
+    margin-top: -100px;
+    margin-left: 100px;
+    margin-right: 50px;
+    flex: 0 0 auto;
+  }
+  
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 100px 60px;
+}
+
+.information {
+    flex: 0 1 550px;
+    margin-top: -150px;
+
+}
+
+.information h1 {
+    font-family: 'Be vietnam Pro';
+    color: white;
+    font-size: 50px;
+    margin-bottom: -50px;
+    margin-top: 35px;
+}
+
+.information h2 {
+    font-family: 'Pacifico';
+    color: white;
+    font-size: 50px;
+    font-weight: 500px;
+    margin-bottom: -20px;
+}
+
+.information p {
+    font-family: 'Be vietnam Pro';
+    color: white;
+    font-size: 40px;
+    font-weight: 500px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+section {
+  scroll-margin-top: 125px;
+}
+
+body {
+    background: 
+    url("Project-pictures/starss.png"),
+    linear-gradient(to bottom, #051d47, #012452, #1e427d, #006184);
+    background-repeat: repeat;
+    background-size: 1200px auto, cover;
+    background-attachment: fixed;
+  }
+  
+.start-btn {
+    display: inline-block;
+    text-decoration: none;
+    font-family:"Pacifico";
+    font-size: 20px;
+    color: white;
+    background-color: #deb324;
+    border: #deb324;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 50px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.start-btn:hover {
+  box-shadow: 0 0 15px 5px #e0c01f;
+  transform: scale(1.05);
+}
+
+.sign-in-btn {
+    display: inline-block;
+    text-decoration: none;
+    font-family:"Pacifico";
+    font-size: 20px;
+    color: #004aad;
+    background-color: white;
+    border: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: box-shadow 0.3s ease-in, transform .3s ease-out;
+}
+
+.sign-in-btn:hover {
+  box-shadow: 0 0 15px 5px #ffffff;
+  transform: scale(1.05);
+}
+
+#about h2 {
+    font-family:"Be vietnam pro";
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    padding-top: 150px;
+    text-align: center;
+}
+
+#about p {
+    font-family: "Be vietnam pro";
+    font-size: 25px;
+    color: white;
+    text-align: left;
+}
+
+#features h2 {
+    font-family:"Be vietnam pro";
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+#features ul {
+    font-family: "Be vietnam pro";
+    font-size: 25px;
+    color: white;
+    text-align: left;
+    margin-bottom: 50px;
+    list-style-type: square;
+}
+
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 0px 50px;
+  padding-left: 200px;
+  max-width: 900px;
+}
+
+.about-img {
+  width: 300px;
+  height: auto;
+}
+
+.about-text {
+  flex: 0;
+  max-width: 400px;
+}
+
+.features-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 0px 50px;
+  padding-right: 200px;
+  max-width: 1000px;
+  flex-direction: row-reverse;
+}
+
+.features-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Project-pictures/clouds-landing.png);
+  background-size: auto;
+  background-attachment: fixed;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+
+.features-img {
+  width: 300px;
+  height: fit-content;
+  flex-shrink: 0;
+  padding-top: 90px;
+}
+
+.features-text {
+  flex: 1;
+  max-width: 600px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+#community {
+  padding: 80px 20px;
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  font-family: "Be vietnam Pro";
+  margin-top: 50px;
+}
+
+#community h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.community-grid {
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  /*grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));*/
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.community-card {
+  background-color: rgba(0, 0, 0, 0.29);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.429);
+  transition: transform 0.3s ease;
+}
+
+.community-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 50px 5px #ffffff;
+}
+
+.community-card h3 {
+  margin-bottom: 10px;
+  color: #1e90ff;
+}
+
+.community-card p {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#cta { 
+    position: relative; 
+    padding: 150px 100px; 
+    color: white; text-align: 
+    center; overflow: hidden; 
+    width: 100vw;  
+    margin: 0; 
+    margin-top: 130px;
+    padding: 100px 0; 
+} 
+
+#cta::before { 
+    content: ""; 
+    position: fixed; 
+    bottom: 0; left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-image: url('Project-pictures/Mountains.png'); 
+    background-size: auto 100%; 
+    background-repeat:repeat; 
+    background-attachment: fixed; 
+    opacity: 0.8; 
+    z-index: 0;  
+}
+
+#cta > * {
+  position: relative;
+  z-index: 1;
+}
+
+#cta h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#cta p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+}
+
+#cta .start-btn {
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #deb324;
+  color: white;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+#footer {
+  background-color: #0d1117;
+  padding: 60px 40px 30px;
+  color: #c9d1d9;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  min-width: 150px;
+  flex: 1;
+}
+
+.footer-column h4 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #8b949e;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #58a6ff;
+}
+
+.footer-column.brand h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer-column.brand p {
+  font-size: 14px;
+  color: #8b949e;
+  max-width: 250px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #8b949e;
+  border-top: 1px solid #21262d;
+  padding-top: 20px;
+}
+
+.pin-icon {
+  font-size: 20px;
+}
+
+
+/* ==== SIGN-IN PAGE ==== */
+
+.welcome-signup {
+ overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  width: 0;
+  animation: typing 2.75s steps(100) forwards;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.welcome-signin {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  width: 0;
+  animation: typing 2.75s steps(80) forwards;
+  text-align: left;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 80ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+  margin-bottom: -20px;
+}
+
+
+.signup-logo {
+    color: white;
+    font-family: 'Pacifico';
+    font-weight: 500;
+    font-size: 55px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: -90px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: -75px;
+}
+
+.welcome-signup,
+.welcome-signin {
+    color: white;
+    font-family: 'Be vietnam Pro';
+    font-weight: 100;
+    font-size: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -120px;
+    margin-bottom: 20px;
+}
+
+.signup-box {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.066);
+    border: 2px solid rgba(255, 255, 255, 0.247);
+    border-radius: 10px;
+    box-shadow: 5 20px 20px rgba(0, 0, 0, 0.852);
+    margin-bottom: 0px;
+}
+
+.signup-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-box input{
+  margin-bottom: 15px;
+  padding: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  border-color: rgb(0, 0, 0);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-family: "Be vietnam pro";
+  color: white;
+}
+
+.signup-box input:focus{
+  outline: none;
+  border-bottom: 2px solid #d4d4d4;
+  color: rgb(255, 254, 254);
+}
+
+.signup-box button {
+  margin-top: 25px;
+  background-color: #0859c2;
+  color: white;
+  margin-bottom: 15px;
+  padding: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #0c60cd;
+  border-radius: 5px;
+  font-family: "Be vietnam pro";
+}
+
+.signup-box button:hover {
+  background-color: #186ee0;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 17px;
+  padding: 6px;
+  box-shadow: 0 0 12px #1e90ff;
+  transform: scale(1.02);
+  transition: 0.3s ease;
+}
+
+
+#username-status {
+  font-family: "Be vietnam Pro";
+  font-size: 12px;
+  position: absolute;
+  top: 326px;
+}
+
+/* hide wrapper by default (no gap!) */
+#password-rules-wrapper {
+  display: none;
+  margin-top: 8px;       /* only applies when it’s visible */
+}
+
+/* show wrapper when it has the “show” class */
+#password-rules-wrapper.show {
+  display: block;
+}
+
+/* minimal styling */
+#password-header {
+  font-size: 0.9rem;
+  margin: 0 0 4px;
+}
+#password-requirements {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #000000;
+}
+#password-requirements li {
+  margin-bottom: 4px;
+}
+
+
+/* ==== SIGN IN ==== */
+.signin-link {
+    color: rgb(255, 255, 255);
+    font-family: "Be vietnam pro";
+    text-align: center;
+    font-weight: bold;
+    padding: 0px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+.signin-link a {
+    color: #0863da;
+}
+
+.forgotpass-link {
+    color: rgb(255, 255, 255);
+    font-family: "Be vietnam pro";
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 0px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.forgotpass-link a {
+    color: #61b9f4;
+    font-size: 13px;
+}
+
+.astronaut {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 400px;
+  z-index: -1;
+  opacity: 95%;
+  animation: float 4s ease-in-out infinite;
+}
+    
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.earth {
+  position: fixed;
+  bottom: -300px;
+  right: -125px;
+  width: 600px;
+  z-index: -1;
+  opacity: 95%;
+}
+
+/* ==== Reset-password modal ==== */
+
+.modal.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: rgba(0, 0, 0, 0.674);
+  border-color: white;
+  border-width: 10px;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+  width: 300px;
+  max-width: 90%;
+  text-align: center;
+  color: white;
+  font-family: "Be vietnam Pro";
+}
+
+.modal-content input {
+  width: 90%;
+  margin: 5px;
+  padding: 5px;
+  justify-content: center;
+}
+
+.modal-content button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-family: "Be vietnam Pro";
+  color: black;
+}
+
+.close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+/* ==== MAIN PAGE ==== */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="Project-pictures/astronaut.png" class="astronaut">
+    <img src="Project-pictures/Planit_Earth.png" class="earth">
+
+    <div class="signup-logo">
+        <h1>Planit</h1>
+    </div>
+    <div class="header-container">
+    <div class="welcome-signin">
+        <h2>Welcome Back! Sign in to plan your next adventure.</h2>
+        </div>
+    </div>
+    <div class="signup-box">
+        <form action="#" method="post">
+            <input type="text" name="first" placeholder="Username">
+            <input type="text" name="last" placeholder="Password">
+            <button type="submit" name="submit">Submit</button>
+        </form>
+        <p class="signin-link">Dont have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+    <p class="forgotpass-link">
+  Forgot your password? <a href="#" id="forgot-password-link">Click here</a>
+</p>
+<div id="reset-modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="close-reset" class="close">&times;</span>
+    <h3>Reset Your Password</h3>
+    <input type="email" id="reset-email" placeholder="Enter your email" required />
+    <button id="reset-btn">Send Reset Link</button>
+    <small id="reset-msg"></small>
+  </div>
+</div>
+<script type="module" src="firebase-init.js"></script>
+<script type="module" src="resetpass.js"></script>
+
+
+</body>
+</html>
