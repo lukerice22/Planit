@@ -1,7 +1,7 @@
 const maptilerKey = "1BB4U1wsFGZh3lDXlddh";
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyDuOsGp71SLA5do-spNguGMXTEQr4jJXY4",
+  apiKey: "AIzaSyAkg_KT1JXqXOEk438R-f0cV8EF6gaY2xI",
   authDomain: "planit-bafee.firebaseapp.com",
   projectId: "planit-bafee",
   storageBucket: "planit-bafee.firebaseapp.com",
